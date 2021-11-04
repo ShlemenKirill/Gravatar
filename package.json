@@ -1,6 +1,6 @@
 {
   "name": "gravatar-url-simple",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Returns Gravatar URL",
   "main": "index.js",
   "type": "module",
