@@ -1,4 +1,4 @@
-import MD5 from ".lib/md5.js";
+import MD5 from "./lib/md5.js";
 
 export const gravatarURL = {
   getGravatarUrl,
