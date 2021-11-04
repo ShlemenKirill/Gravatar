@@ -1,5 +1,10 @@
 import MD5 from ".lib/md5.js";
 
+export const gravatarURL = {
+  getGravatarUrl,
+  gravatarTypes,
+};
+
 const EMAIL_REGEX =
   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -11,12 +16,10 @@ const getHash = (email) => {
   return MD5(clearEmail);
 };
 
-const gravatarURL = (email, options) => {
+const getGravatarUrl = (email, options) => {
   const emailHash = getHash(email);
   return `https://www.gravatar.com/avatar/${emailHash}?default=${options}`;
 };
-
-export default gravatarURL;
 
 const gravatarTypes = {
   NOTFOUND: "404",
@@ -28,5 +31,3 @@ const gravatarTypes = {
   ROBOHASH: "robohash",
   BLANK: "blank",
 };
-
-export default gravatarTypes;
