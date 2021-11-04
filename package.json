@@ -1,0 +1,14 @@
+{
+  "name": "gravatar-url",
+  "description": "Returns Gravatar URL",
+  "version": "1.0.0",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.12.0"
+  }
+}
