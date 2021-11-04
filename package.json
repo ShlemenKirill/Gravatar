@@ -1,6 +1,7 @@
 {
   "name": "gravatar-url-simple",
   "version": "1.0.10",
+  "repository": "ShlemenKirill/Gravatar",
   "description": "Returns Gravatar URL",
   "main": "index.js",
   "type": "module",
