@@ -1,11 +1,16 @@
 {
   "name": "gravatar-url-simple",
   "description": "Returns Gravatar URL",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "license": "MIT",
   "files": [
+    "dist/*",
     "index.js"
   ],
+  "exports": "./index.js",
+  "directories": {
+    "lib": "./lib"
+  },
   "type": "module",
   "main": "index.js",
   "engines": {
