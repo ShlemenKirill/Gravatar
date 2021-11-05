@@ -1,5 +1,9 @@
 # Gravatar
 
+[![npm](https://img.shields.io/npm/v/gravatar-url-simple.svg)](https://www.npmjs.com/package/gravatar-url-simple)
+[![NPM downloads](https://img.shields.io/npm/dm/gravatar-url-simple.svg)](https://www.npmjs.com/package/gravatar-url-simple)
+[![License](https://img.shields.io/npm/l/gravatar-url-simple.svg)](https://www.npmjs.com/package/gravatar-url-simple)
+
 Simple, lightweight npm package without external dependencies
 
 ### Install
