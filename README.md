@@ -1,5 +1,7 @@
 # Gravatar
 
+Simple, lightweight npm package without external dependencies
+
 ### Install
 ```javascript
 npm i gravatar-url-simple
