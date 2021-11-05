@@ -1,7 +1,7 @@
 {
   "name": "gravatar-url-simple",
   "version": "1.0.10",
-  "repository": "ShlemenKirill/Gravatar",
+  "repository": "git://github.com/ShlemenKirill/Gravatar.git"
   "description": "Returns Gravatar URL",
   "main": "index.js",
   "type": "module",
@@ -10,5 +10,8 @@
   },
   "keywords": [],
   "author": "Shlemen Kirill",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  }
 }
