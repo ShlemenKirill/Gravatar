@@ -12,7 +12,7 @@ npm i gravatar-url-simple
 ```
 ### Import
 ```
-import { gravatarURL } from "gravatar-url-simple";
+import gravatarURL from "gravatar-url-simple";
 ```
 
 ## Simple usage:
