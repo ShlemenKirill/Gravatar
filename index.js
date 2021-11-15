@@ -1,4 +1,4 @@
-import MD5 from "./lib/md5.js";
+const MD5 = require("./lib/md5.js")
 
 const EMAIL_REGEX =
   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -27,7 +27,9 @@ const gravatarTypes = {
   BLANK: "blank",
 };
 
-export const gravatarURL = {
+const gravatarURL = {
   getGravatarUrl,
   gravatarTypes,
 };
+
+module.exports = gravatarURL;
