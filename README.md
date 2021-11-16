@@ -23,7 +23,7 @@ const defaultImage = gravatarURL.gravatarTypes.IDENTICON
 gravatarURL.getGravatarUrl(email, defaultImage)
 ```
 
-### Default inage types:
+### Default image types:
 
 ```javascript
 const gravatarTypes = {
