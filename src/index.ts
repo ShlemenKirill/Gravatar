@@ -23,9 +23,7 @@ const getGravatarUrl = (email: string, gravatarType: GravatarTypes): string => {
   return `https://www.gravatar.com/avatar/${emailHash}?default=${gravatarType}`;
 };
 
-const gravatarURL = {
+export const gravatarURL = {
   getGravatarUrl,
   GravatarTypes,
 };
-
-module.exports = gravatarURL;

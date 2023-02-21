@@ -1,18 +1,32 @@
 {
   "name": "gravatar-url-simple",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "repository": "git://github.com/ShlemenKirill/Gravatar.git",
   "description": "Returns Gravatar URL",
-  "main": "dist/bundle.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/esm/types/index.d.ts",
+        "default": "./lib/esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/cjs/types/index.d.ts",
+        "default": "./lib/cjs/index.js"
+      }
+    }
+  },
+  "types": "./lib/cjs/types/index.d.ts",
+  "main": "./lib/cjs/index.js",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
-    "build": "webpack --mode=production"
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p ./configs/tsconfig.esm.json",
+    "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
+    "prepack": "npm run build"
   },
   "keywords": [],
   "author": "Shlemen Kirill",
-  "license": "MIT",
-  "devDependencies": {
-    "source-map-loader": "^4.0.1",
-    "ts-loader": "^9.4.2",
-    "webpack-cli": "^5.0.1"
-  }
+  "license": "MIT"
 }
