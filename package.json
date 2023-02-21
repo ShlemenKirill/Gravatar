@@ -25,7 +25,16 @@
     "build:esm": "tsc -p ./configs/tsconfig.esm.json",
     "build:cjs": "tsc -p ./configs/tsconfig.cjs.json",
     "test": "mocha",
-    "prepack": "npm run build"
+    "prepack": "npm run build",
+    "semantic-release": "semantic-release"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [],
   "author": "Shlemen Kirill",
@@ -35,6 +44,7 @@
     "@types/mocha": "^10.0.1",
     "chai": "^4.3.7",
     "mocha": "^10.2.0",
+    "semantic-release": "^20.1.0",
     "ts-node": "^10.9.1"
   }
 }
